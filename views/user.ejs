@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Users</title>
+
+  </head>
+  <body>
+      <h1>Users List</h1>
+      <table>
+          <tr>
+              <th>Id</th>
+              <th>Name</th>
+              <th>Birthday</th>
+              <th>Height</th>
+              <th>Weight</th>
+              <th>Calories</th>
+              <th>Protein</th>
+              <th>Fat</th>
+          </tr>
+              <% for(let i =0; i< user.length; i++){ %>
+                  <tr>
+                      <th><%= user[i].id%></th>
+                      <th><%= user[i].name%></th>
+                      <th><%= user[i].birthday%></th>
+                      <th><%= user[i].height%></th>
+                      <th><%= user[i].weight%></th>
+                      <th><%= user[i].calories%></th>
+                      <th><%= user[i].protein%></th>
+                      <th><%= user[i].fat%></th>
+                  </tr>
+              <%}%>
+            </table>
+  </body>
+
+</html>
